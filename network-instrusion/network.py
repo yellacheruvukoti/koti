@@ -3,7 +3,7 @@ import streamlit as st
 from streamlit_option_menu import option_menu
 
 # loading the saved models
-Networkinstrusion_model = pickle.load(open('C:/Users/Dodda.Madhu/Downloads/network-instrusion/network-instrusion/network.sav', 'rb'))
+Networkinstrusion_model = pickle.load(open('network.sav', 'rb'))
 
 # sidebar for navigation
 with st.sidebar:
@@ -95,3 +95,4 @@ if selected == 'Home':
 if st.button("About"):
     st.text("Let's Learn")
     st.text("Built with Streamlit")
+
